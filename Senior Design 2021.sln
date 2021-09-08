@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Senior Design 2021", "Senior Design 2021\Senior Design 2021.pyproj", "{EDD0302A-9569-46C5-A5ED-810201180701}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDD0302A-9569-46C5-A5ED-810201180701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDD0302A-9569-46C5-A5ED-810201180701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {663DF151-22A8-44EB-B9E1-673623CAA3A9}
+	EndGlobalSection
+EndGlobal
