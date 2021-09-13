@@ -9,7 +9,7 @@ for i in range(0,100):
         elif 5<=i<=25 and 75<j<=95:
             mesh[i,j]=0.5 #wood
         elif 40<=i<=77 and 30<=j<=80:
-            mesh[i,j]=-1 #water
+            mesh[i,j]=-3 #water
         elif 80<=i<=93 and 50<=j<=66:
             mesh[i,j]=0.2 #metal storage house
         elif 27<i<35:
@@ -27,16 +27,24 @@ for i in range(0,100):
                 mesh[i,j]=0.7 #normal grass
 plt.imshow(mesh)
 mesh[1,1]=0
-for i in range(1,99):
-    for j in range(1,99):
-        a= random.uniform(0,1)
-        if mesh[i,j]==0:
-            for e in range(i-1,i+2):
-                for w in range(j-1,j+2):
-                    if a<mesh[e,w]:
-                        mesh[e,w]=0
-                    else:
-                        continue
+l=1
+while l<20:
+    for i in range(1, 99):
+        for j in range(1, 99):
+            if mesh[i, j] == 0:
+                flame=0
+                a = random.uniform(0, 1)
+                for e in range(i - 1, i + 2):
+                    for w in range(j - 1, j + 2):
+                        if a < mesh[e, w]:
+                            mesh[e, w] = 0
+                            flame+=1
+                if flame==0:
+                    mesh[i,j]=-1
+    l+=1
+
+
+
 plt.figure()
 plt.imshow(mesh)
 plt.show()
